@@ -2,7 +2,7 @@ const { createAudioPlayer, createAudioResource, AudioPlayerStatus } = require('@
 const { spawn } = require('child_process');
 const path = require('path');
 
-const ytdlpPath = path.join(process.cwd(), 'yt-dlp.exe');
+const ytdlpPath = '/usr/local/bin/yt-dlp';
 const cookiesPath = path.join(process.cwd(), 'cookies.txt');
 
 function getQueue(guildId, client) {
